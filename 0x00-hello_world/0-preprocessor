@@ -1,0 +1,8 @@
+#!/bin/bash
+CFILE = "0-main.c"
+
+output = "main.c"
+
+cpp -P "$CFILE" > "$output"
+
+echo "preprocessing complete resulat save in file output"
