@@ -1,8 +1,2 @@
 #!/bin/bash
-CFILE = "0-main.c"
-
-output = "main.c"
-
-cpp -P "$CFILE" > "$output"
-
-echo "preprocessing complete resulat save in file output"
+CFILE="0-main.c" ; OUTPUT_FILE="main.c"; cpp -P "$CFILE" > "$OUTPUT_FILE"; gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "OUTPUT_FILE" -o output
